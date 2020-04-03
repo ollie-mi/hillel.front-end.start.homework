@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    border: 5px solid #aaa;
+    margin: 40px auto;
+    width: 900px;
+}
+
+.image-container {
+    height: 600px;
+    margin: 30px auto;
+    width: 600px;
+}
+
+.div-one {
+    background-image: url(../images/travel.jpeg);
+    background-position: -322px -244px;
+}
+
+.div-two {
+    background-image: url(../images/travel.jpeg);
+    background-position: right;
+}
+
+.div-three {
+    background-image: url(../images/virus.png);
+    background-repeat: repeat-y;
+}
+
+.div-four {
+    background-image: url(../images/travel.jpeg);
+    background-size: cover;
+}
+
+.div-five {
+    background-image: url(../images/travel.jpeg);
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+}
+
+.div-six {
+    background-image: url(../images/travel.jpeg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.div-seven {
+    background-image: url(../images/travel.jpeg);
+    background-size: contain;
+    background-attachment: local;
+    overflow: scroll;
+}
