@@ -40,18 +40,19 @@ body {
 .div-five {
     background-image: url(../images/travel.jpeg);
     background-repeat: no-repeat;
-    background-size: 70% 70%;
+    background-size: 90% 60%;
 }
 
 .div-six {
     background-image: url(../images/travel.jpeg);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
 .div-seven {
     background-image: url(../images/travel.jpeg);
-    background-size: contain;
+    background-size: cover;
     background-attachment: local;
     overflow: scroll;
 }
