@@ -1,0 +1,271 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/myriadpro.otf") format("otf"),
+    url("../fonts/MyriadPro-Bold") format("otf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Myriad Pro", sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1, p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 1024px;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    height: 90px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-flex-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.logo-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    align-items: center;
+    background-color: #5094f2;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    margin-right: 15px;
+    width: 44px;
+}
+
+.logo-text {
+    color: #000;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+}
+
+.main-content {
+    padding-bottom: 50px;
+    padding-top: 90px;
+}
+
+/* MENU */
+
+.menu-container {
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    height: 100%;
+}
+
+.menu-item {
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    padding: 0 10px;
+    letter-spacing: 0.2px;
+}
+
+.menu-item.active,
+.menu-item:hover {
+    border-color: #5094f2;
+}
+
+.menu-item a {
+    color: #6c6c6c;
+    height: 100%;
+    line-height: 90px;
+    text-transform: capitalize;
+}
+
+/* BANNER */
+
+.banner {
+    background: #fff url(../images/banner-bg.png) left top/cover;
+}
+
+.banner-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.iphone-container {
+    /* background-image: url(../images/iphone.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 420px; */
+    text-align: center;
+    width: 50%;
+}
+
+.sign-up-container {
+    color: #fff;
+    width: 50%;
+}
+
+.banner-title {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.banner-description {
+    font-size: 26px;
+    line-height: 44px;
+    margin-top: 10px;
+    padding-right: 190px;
+}
+
+.sign-up-button {
+    align-items: center;
+    background-color: #5094f2;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    margin-left: 12px;
+    margin-top: 36px;
+    padding: 8px 11px;
+    width: 172px;
+}
+
+/* PRODUCTS */
+
+.products-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 0 94px 0;
+}
+
+.product-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 29px;
+    width: calc(100% / 3);
+}
+
+.product-image {
+    align-items: center;
+    border-radius: 100%;
+    display: flex;
+    height: 186px;
+    justify-content: center;
+    margin-bottom: 28px;
+    width: 186px;
+}
+
+.product-image.blue {
+    background-color: #5094f2;
+}
+
+.product-image.red {
+    background-color: #d94748;
+}
+
+.product-image.yellow {
+    background-color: #ebbb11;
+}
+
+.product-name {
+    color: #5094f2;
+    font-size: 20px;
+}
+
+.product-description p {
+    color: #909090;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* SOPPING CART */
+
+.cart-content {
+    align-items: center;
+    color: #6f7173;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping-cart {
+    margin-right: 25px;
+    padding: 0 50px;
+}
+
+.shopping-cart h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.shopping-cart-image {
+    text-align: center;
+}
+
+.cart-info h4 {
+    font-size: 24px;
+}
+
+.cart-info p {
+    color: #909090;
+    font-size: 15px;
+    line-height: 36px;
+    margin-top: 36px;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+}
+
+.copyright {
+    padding-bottom: 45px;
+    padding-top: 34px;
+    text-align: center;
+}
+
+.copyright span {
+    color: #909090;
+    font-size: 15px;
+}
