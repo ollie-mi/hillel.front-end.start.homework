@@ -143,12 +143,6 @@ ul {
 }
 
 .iphone-container {
-    /* background-image: url(../images/iphone.png);
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 420px; */
     text-align: center;
     width: 50%;
 }
@@ -186,7 +180,6 @@ ul {
     margin-left: 1.2rem;
     margin-top: 3.6rem;
     padding: 0.8rem 1.1rem;
-    /*width: 10.75rem;*/
     width: 17.5rem;
 }
 
@@ -255,7 +248,6 @@ ul {
 
 .shopping-cart {
     margin-right: 2.5rem;
-    /*padding: 0 50px;*/
     width: 47.8515625%;
 }
 
@@ -344,7 +336,6 @@ ul {
 
     .menu-container-mobile {
         display: block;
-        /*position: relative;*/
     }
 
     .dropdown-content {
