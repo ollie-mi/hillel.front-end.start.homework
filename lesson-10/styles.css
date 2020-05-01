@@ -129,15 +129,25 @@ body {
 .clock-container {
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 50px;
     position: relative;
 }
 
+.top-block {
+    border: 15px solid #34495e ;
+    border-radius: 100%;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    width: 50px;
+}
+
 .clock {
     align-items: center;
-    border: 20px solid #34495e ;
+    border: 25px solid #34495e ;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -158,7 +168,7 @@ body {
     border-radius: 4px;
     height: 75px;
     position: absolute;
-    top: 50px;
+    top: 100px;
     transform-origin: 50% 100%;
     width: 10px;
 }
