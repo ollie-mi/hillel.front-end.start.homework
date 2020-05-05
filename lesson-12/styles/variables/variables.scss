@@ -1,0 +1,61 @@
+@import "../fonts/fonts.scss";
+
+// Families
+%maven-pro-bold {
+    font-family: 'Maven Pro';
+    font-weight: bold;
+}
+
+%maven-pro-regular {
+    font-family: 'Maven Pro';
+    font-weight: normal;
+}
+
+%maven-pro-medium {
+    font-family: 'Maven Pro';
+    font-weight: 500;
+}
+
+%lato-light {
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+// Sizes
+$hamburger-item-height-xs: 4px;
+$hamburger-item-width-xs: 24px;
+$hamburger-trigger-height-xs: $hamburger-item-height-xs * 5;
+
+$hamburger-item-height-s: 6px;
+$hamburger-item-width-s: 36px;
+$hamburger-trigger-height-s: $hamburger-item-height-s * 5;
+
+$logo-size-xs: 35px;
+$logo-size-s: 57px;
+$cart-icon-size-xs: 25px;
+$cart-icon-size-s: 40px;
+$cart-counter-size-xs: 15px;
+$cart-counter-size-s: 26px;
+
+$product-name-fs-xs: 20px;
+$product-name-fs-s: 40px;
+
+$customer-number-text-m: 41px;
+
+$product-title-xs: 25px;
+$product-title-s: 50px;
+$product-title-m: 64px;
+
+$product-description-xs: 13px;
+$product-description-s: 26px;
+$product-description-m: 32px;
+
+$product-list-item-xs: 12px;
+$product-list-item-s: 21px;
+$product-list-item-m: 26px;
+
+$buy-now-button-xs: 14px;
+$buy-now-button-s: 25px;
+
+$buy-item-description-xs: 9px;
+$buy-item-description-s: 17px;

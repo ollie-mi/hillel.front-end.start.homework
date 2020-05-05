@@ -1,0 +1,175 @@
+@import "../variables/variables.scss";
+@import "../colors/colors.scss";
+@import "../mixins/mixins.scss";
+
+.header {
+    background-color: $white;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 12px 20px;
+
+    .container {
+        @include display-flex;
+        @include flexbox-values(space-between);
+    }
+
+    @media screen and (min-width: 640px) {
+        padding: 25px 40px;
+    }
+
+    @media screen and (min-width: 1025px) {
+        box-shadow: none;
+        padding: 40px 120px;
+    }
+
+    .header-right {
+        @include display-flex;
+        @include flexbox-values(center, center);
+    }
+
+    .menu-container {
+        display: none;
+
+        @media screen and (min-width: 1025px) {
+            @include display-flex;
+        }
+    }
+
+    .menu-list {
+        @include display-flex;
+
+        .menu-list-item {
+            margin-right: 70px;
+        }
+
+        a {
+            color: $black;
+            text-decoration: none;
+            transition: opacity 200ms;
+
+            @extend %maven-pro-bold;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .any-question-button {
+        display: none;
+        margin-left: 70px;
+        padding: 20px 0;
+
+        @include blue-button(26px, 325px);
+
+        @media screen and (min-width: 1025px) {
+            display: block;
+        }
+    }
+
+    .menu-trigger {
+        height: $hamburger-trigger-height-xs;
+
+        @include display-flex;
+        @include flexbox-values(space-between, center, column);
+
+        @media screen and (min-width: 640px) {
+            height: $hamburger-trigger-height-s;
+        }
+
+        @media screen and (min-width: 1025px) {
+            display: none;
+        }
+    }
+
+    .hamburger-item {
+        background-color: #2d2e30;
+        border-radius: 2px;
+        height: $hamburger-item-height-xs;
+        width: $hamburger-item-width-xs;
+
+        @media screen and (min-width: 640px) {
+            height: $hamburger-item-height-s;
+            width: $hamburger-item-width-s;
+        }
+    }
+
+    .logo-container {
+        @include display-flex;
+        @include flexbox-values;
+    }
+
+    .logo {
+        margin-right: 15px;
+
+        @media screen and (min-width: 640px) {
+            margin-right: 45px;
+        }
+
+        img {
+            height: auto;
+            width: $logo-size-xs;
+
+            @media screen and (min-width: 640px) {
+                width: $logo-size-s;
+            }
+        }
+    }
+
+    .product-name {
+        margin-top: 5px;
+
+        @media screen and (min-width: 1025px) {
+            margin-top: 0;
+        }
+
+        span {
+            font-size: $product-name-fs-xs;
+            text-transform: uppercase;
+
+            @extend %maven-pro-bold;
+
+            @media screen and (min-width: 640px) {
+                font-size: $product-name-fs-s;
+            }
+        }
+
+        .product-name-thin {
+            font-weight: normal;
+        }
+    }
+
+    .cart-container {
+        position: relative;
+
+        .cart-image {
+            img {
+                width: $cart-icon-size-xs;
+
+                @media screen and (min-width: 640px) {
+                    width: $cart-icon-size-s;
+                }
+            }
+        }
+
+        .cart-items-counter {
+            background-color: $main-color;
+            border-radius: 8px;
+            color: $white;
+            font-size: 12px;
+            padding: 1px 5px;
+            position: absolute;
+            right: -8px;
+            text-align: center;
+            top: -3px;
+
+            @extend %maven-pro-bold;
+
+            @media screen and (min-width: 640px) {
+                border-radius: 12px;
+                font-size: 20px;
+                padding: 1px 6px;
+                right: -12px;
+            }
+        }
+    }
+}
