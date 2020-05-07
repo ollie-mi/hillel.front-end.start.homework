@@ -11,26 +11,94 @@
   }
 
   @media screen and (min-width: 1025px) {
-    box-shadow: none;
-    padding: 98px 150px 110px 124px;
+    padding: 35px 0 0 150px;
   }
 
-  .container {
+  @media screen and (min-width: 1280px) {
+    padding-left: 182px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 98px 0 112px 220px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    padding: 32px 0 149px 291px;
+  }
+
+  @media screen and (min-width: 2380px) {
+    padding: 47px 0 224px 455px;
+  }
+  
+  .main-container {
     position: relative;
 
     @include display-flex;
     @include flexbox-values(center, center, column);
 
     @media screen and (min-width: 1025px) {
-      align-items: flex-start;
-      justify-content: space-between;
+      display: block;
     }
   }
 
   .left-container {
     @media screen and (min-width: 1025px) {
       @include display-flex;
-      @include flexbox-values(space-between);
+      @include flexbox-values(flex-start, flex-start);
+    }
+  }
+
+  .row-container {
+    @media screen and (min-width: 1025px) {
+      margin-right: 60px;
+      margin-top: 63px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      margin-right: 120px;
+    }
+
+    @media screen and (min-width: 1180px) {
+      margin-right: 180px;
+    }
+
+    @media screen and (min-width: 1240px) {
+      margin-right: 210px;
+    }
+
+    @media screen and (min-width: 1240px) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      margin-right: 230px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-right: 155px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      margin-right: 230px;
+      margin-top: 90px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      margin-right: 207px;
+      margin-top: 84px;
+    }
+
+    @media screen and (min-width: 2380px) {
+      margin-right: 90px;
+      margin-top: 126px;
+    }
+
+    @media screen and (min-width: 2540px) {
+      margin-right: 160px;
+    }
+
+    @media screen and (min-width: 2850px) {
+      margin-right: 310px;
     }
   }
 
@@ -48,6 +116,20 @@
     @media screen and (min-width: 1025px) {
       display: block;
     }
+
+    @media screen and (min-width: 1440px) {
+      font-size: $customer-number-text-s;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      font-size: $customer-number-text-m;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 2380px) {
+      font-size: $customer-number-text-l;
+    }
   }
 
   .product-title {
@@ -57,11 +139,23 @@
     @extend %maven-pro-bold;
 
     @media screen and (min-width: 640px) {
-      font-size: $product-title-m;
+      font-size: $product-title-l;
     }
 
     @media screen and (min-width: 1025px) {
       font-size: $product-title-s;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: $product-title-m;
+    }
+
+    @media screen and (min-width: 1920px) {
+      font-size: $product-title-xl;
+    }
+
+    @media screen and (min-width: 2380px) {
+      font-size: $product-title-xxl;
     }
   }
 
@@ -72,13 +166,27 @@
     @extend %lato-light;
 
     @media screen and (min-width: 640px) {
-      font-size: $product-description-m;
+      font-size: $product-description-l;
       margin: 34px 0 49px 0;
     }
 
     @media screen and (min-width: 1025px) {
       font-size: $product-description-s;
       margin: 20px 0 35px 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: $product-description-m;
+      margin: 25px 0 40px 0;
+    }
+
+    @media screen and (min-width: 1920px) {
+      font-size: $product-description-xl;
+    }
+
+    @media screen and (min-width: 2380px) {
+      font-size: $product-description-xxl;
+      margin: 40px 0 65px 0;
     }
   }
 
@@ -87,11 +195,23 @@
     @extend %maven-pro-medium;
 
     @media screen and (min-width: 640px) {
-      font-size: $product-list-item-m;
+      font-size: $product-list-item-l;
     }
 
     @media screen and (min-width: 1025px) {
       font-size: $product-list-item-s;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: $product-list-item-m;
+    }
+
+    @media screen and (min-width: 1920px) {
+      font-size: $product-list-item-xl;
+    }
+
+    @media screen and (min-width: 2380px) {
+      font-size: $product-list-item-xxl;
     }
 
     .product-item {
@@ -118,6 +238,21 @@
           height: 20px;
           width: 28px;
         }
+
+        @media screen and (min-width: 1440px) {
+          height: 23px;
+          width: 31px;
+        }
+
+        @media screen and (min-width: 1920px) {
+          height: 30px;
+          width: 41px;
+        }
+
+        @media screen and (min-width: 2380px) {
+          height: 45px;
+          width: 61px;
+        }
       }
 
       @media screen and (min-width: 640px) {
@@ -129,6 +264,19 @@
         margin-bottom: 20px;
         padding-left: 50px;
       }
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 24px;
+        padding-left: 57px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        padding-left: 76px;
+      }
+
+      @media screen and (min-width: 2380px) {
+        padding-left: 112px;
+      }
     }
   }
 
@@ -136,32 +284,6 @@
     margin-top: 28px;
     margin-bottom: 30px;
     padding-left: 40px;
-    position: relative;
-
-    img {
-      height: auto;
-      width: 240px;
-
-      @media screen and (min-width: 640px) {
-        width: 480px;
-      }
-
-      @media screen and (min-width: 1025px) {
-        margin-top: 0;
-        position: absolute;
-        right: 50px;
-        top: 8px;
-        width: 390px;
-
-        @include display-flex;
-        @include flexbox-values;
-      }
-
-      @media screen and (min-width: 1180px) {
-        right: 130px;
-      }
-
-    }
 
     @media screen and (min-width: 640px) {
       padding-left: 78px;
@@ -171,9 +293,46 @@
 
     @media screen and (min-width: 1025px) {
       margin: 0;
-      right: -155px;
-      position: absolute;
-      top: -60px;
+      padding: 0;
+    }
+
+    img {
+      display: block;
+      height: auto;
+      width: 240px;
+
+      @media screen and (min-width: 640px) {
+        width: 480px;
+      }
+
+      @media screen and (min-width: 1025px) {
+        width: 393px;
+      }
+
+      @media screen and (min-width: 1180px) {
+        width: 410px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        width: 420px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 450px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        width: 500px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        width: 524px;
+      }
+
+      @media screen and (min-width: 2380px) {
+        width: 786px;
+      }
+
     }
   }
 
@@ -182,9 +341,23 @@
     @include flexbox-values(center, center, column);
 
     @media screen and (min-width: 1025px) {
-      margin-top: 22px;
+      bottom: 56px;
+      margin-top: 15px;
+      position: absolute;
 
       @include flexbox-values(center, flex-start, column);
+    }
+
+    @media screen and (min-width: 1600px) {
+      bottom: 120px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      bottom: 55px;
+    }
+
+    @media screen and (min-width: 2380px) {
+      bottom: 90px;
     }
 
     .buy-now-button {
@@ -196,7 +369,7 @@
       @extend %maven-pro-bold;
 
       @media screen and (min-width: 640px) {
-        font-size: $buy-now-button-m;
+        font-size: $buy-now-button-l;
         padding: 34px 0 38px 0;
         width: 538px;
       }
@@ -206,6 +379,19 @@
         font-size: $buy-now-button-s;
         padding: 17px 0;
         width: 269px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        font-size: $buy-now-button-m;
+        padding: 22px 0;
+        width: 359px;
+      }
+
+      @media screen and (min-width: 2380px) {
+        border-radius: 5px;
+        font-size: $buy-now-button-xl;
+        padding: 33px 0;
+        width: 538px;
       }
     }
 
@@ -219,7 +405,7 @@
       @include flexbox-values;
 
       @media screen and (min-width: 640px) {
-        font-size: $buy-item-description-m;
+        font-size: $buy-item-description-l;
         margin-top: 18px;
       }
 
@@ -228,6 +414,16 @@
         margin-top: 7px;
 
         @include flexbox-values;
+      }
+
+      @media screen and (min-width: 1920px) {
+        font-size: $buy-item-description-m;
+        margin-top: 12px;
+      }
+
+      @media screen and (min-width: 2380px) {
+        font-size: $buy-item-description-xl;
+        margin-top: 18px;
       }
     }
   }
