@@ -12,16 +12,31 @@
 
   @media screen and (min-width: 1025px) {
     box-shadow: none;
-    padding: 100px 240px;
+    padding: 98px 150px 110px 124px;
   }
 
   .container {
     position: relative;
 
+    @include display-flex;
+    @include flexbox-values(center, center, column);
+
+    @media screen and (min-width: 1025px) {
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .left-container {
+      @media screen and (min-width: 1025px) {
+        @include display-flex;
+        @include flexbox-values(space-between);
+      }
+    }
+
     .customers-number {
       display: none;
-      font-size: $customer-number-text-m;
-      margin-bottom: 20px;
+      font-size: $customer-number-text-xs;
+      margin-bottom: 6px;
 
       @extend %maven-pro-regular;
 
@@ -41,11 +56,11 @@
       @extend %maven-pro-bold;
 
       @media screen and (min-width: 640px) {
-        font-size: $product-title-s;
+        font-size: $product-title-m;
       }
 
       @media screen and (min-width: 1025px) {
-        font-size: $product-title-m;
+        font-size: $product-title-s;
       }
     }
 
@@ -56,19 +71,27 @@
       @extend %lato-light;
 
       @media screen and (min-width: 640px) {
-        font-size: $product-description-s;
+        font-size: $product-description-m;
         margin: 34px 0 49px 0;
       }
 
       @media screen and (min-width: 1025px) {
-        font-size: $product-description-m;
-        margin: 30px 0 65px 0;
+        font-size: $product-description-s;
+        margin: 20px 0 35px 0;
       }
     }
 
     .product-list-container {
       font-size: $product-list-item-xs;
       @extend %maven-pro-medium;
+
+      @media screen and (min-width: 640px) {
+        font-size: $product-list-item-m;
+      }
+
+      @media screen and (min-width: 1025px) {
+        font-size: $product-list-item-s;
+      }
 
       .product-item {
         position: relative;
@@ -91,8 +114,8 @@
           }
 
           @media screen and (min-width: 1025px) {
-            height: 28px;
-            width: 40px;
+            height: 20px;
+            width: 28px;
           }
         }
 
@@ -102,27 +125,17 @@
         }
 
         @media screen and (min-width: 1025px) {
-          margin-bottom: 38px;
-          padding-left: 72px;
+          margin-bottom: 20px;
+          padding-left: 50px;
         }
-      }
-
-      @media screen and (min-width: 640px) {
-        font-size: $product-list-item-s;
-      }
-
-      @media screen and (min-width: 1025px) {
-        font-size: $product-list-item-m;
       }
     }
 
     .product-image {
-      padding-left: 40px;
       margin-top: 28px;
       margin-bottom: 30px;
-
-      @include display-flex;
-      @include flexbox-values;
+      padding-left: 40px;
+      position: relative;
 
       img {
         height: auto;
@@ -133,7 +146,14 @@
         }
 
         @media screen and (min-width: 1025px) {
-          width: 600px;
+          margin-top: 0;
+          position: absolute;
+          right: 50px;
+          top: 8px;
+          width: 390px;
+
+          @include display-flex;
+          @include flexbox-values;
         }
 
       }
@@ -146,9 +166,9 @@
 
       @media screen and (min-width: 1025px) {
         margin: 0;
-        right: 0;
+        right: -155px;
         position: absolute;
-        top: 0;
+        top: -60px;
       }
     }
 
@@ -157,6 +177,8 @@
       @include flexbox-values(center, center, column);
 
       @media screen and (min-width: 1025px) {
+        margin-top: 22px;
+
         @include flexbox-values(center, flex-start, column);
       }
 
@@ -169,9 +191,16 @@
         @extend %maven-pro-bold;
 
         @media screen and (min-width: 640px) {
-          font-size: $buy-now-button-s;
+          font-size: $buy-now-button-m;
           padding: 34px 0 38px 0;
           width: 538px;
+        }
+
+        @media screen and (min-width: 1025px) {
+          border-radius: 3px;
+          font-size: $buy-now-button-s;
+          padding: 17px 0;
+          width: 269px;
         }
       }
 
@@ -185,11 +214,14 @@
         @include flexbox-values;
 
         @media screen and (min-width: 640px) {
-          font-size: $buy-item-description-s;
+          font-size: $buy-item-description-m;
           margin-top: 18px;
         }
 
         @media screen and (min-width: 1025px) {
+          font-size: $buy-item-description-s;
+          margin-top: 7px;
+
           @include flexbox-values;
         }
       }
