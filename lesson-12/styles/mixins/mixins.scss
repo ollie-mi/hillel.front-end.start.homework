@@ -22,3 +22,18 @@
 
   @extend %maven-pro-bold;
 }
+
+@mixin usp-box-header($font-size) {
+  font-size: $font-size;
+  text-transform: uppercase;
+
+  @extend %maven-pro-bold;
+}
+
+@mixin usp-box-desc-text($font-size, $margin-top) {
+  color: #767676;
+  font-size: $font-size;
+  margin-top: $margin-top;
+
+  @extend %lato-regular;
+}

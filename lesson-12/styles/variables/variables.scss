@@ -17,8 +17,13 @@
 }
 
 %lato-light {
-    font-family: 'Lato';
+    font-family: 'Lato Light';
     font-weight: 300;
+}
+
+%lato-regular {
+    font-family: 'Lato Regular';
+    font-weight: 500;
 }
 
 // Sizes
@@ -86,3 +91,9 @@ $buy-item-description-s: 10px;
 $buy-item-description-m: 13px;
 $buy-item-description-l: 17px;
 $buy-item-description-xl: 20px;
+
+$usp-header-fs-xs: 14px;
+$usp-header-fs-s: 18px;
+
+$usp-text-fs-xs: 12px;
+$usp-text-fs-s: 16px;

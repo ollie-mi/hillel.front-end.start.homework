@@ -1,0 +1,70 @@
+@import "../variables/variables.scss";
+@import "../colors/colors.scss";
+@import "../mixins/mixins.scss";
+
+.review {
+  background-color: $white;
+  box-shadow: 0 0 15px rgba(52, 52, 52, 0.15);
+
+  @media screen and (min-width: 640px) {
+    box-shadow: 0 0 20px rgba(52, 52, 52, 0.15);
+  }
+
+  .shipping {
+    padding: 30px 25px;
+
+    @include display-flex;
+    @include flexbox-values;
+
+    @media screen and (min-width: 640px) {
+      padding: 39px 33px;
+    }
+
+    .sh-icon-block {
+      margin-right: 21px;
+
+      @media screen and (min-width: 640px) {
+        margin-right: 28px;
+      }
+
+      img {
+        height: auto;
+        width: 39px;
+
+        @media screen and (min-width: 640px) {
+          width: 52px;
+        }
+      }
+    }
+
+    .shipping-desc {
+
+      .shipping-header {
+
+        @include usp-box-header($usp-header-fs-xs);
+
+        @media screen and (min-width: 640px) {
+          font-size: $usp-header-fs-s;
+        }
+      }
+
+      .shipping-text {
+
+        @include usp-box-desc-text($usp-text-fs-xs, 11px);
+
+        @media screen and (min-width: 640px) {
+          font-size: $usp-text-fs-s;
+          margin-top: 14px;
+        }
+      }
+    }
+  }
+
+  .money-back {
+    display: none;
+  }
+
+  .online-payment {
+    display: none;
+  }
+}
