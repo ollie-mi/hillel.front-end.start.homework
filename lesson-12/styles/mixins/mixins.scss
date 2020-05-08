@@ -24,6 +24,7 @@
 }
 
 @mixin usp-box-header($font-size) {
+  color: #3e3e3e;
   font-size: $font-size;
   text-transform: uppercase;
 

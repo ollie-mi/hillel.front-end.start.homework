@@ -7,7 +7,7 @@
   box-shadow: 0 0 15px rgba(52, 52, 52, 0.15);
 
   @media screen and (min-width: 640px) {
-    box-shadow: 0 0 20px rgba(52, 52, 52, 0.15);
+    box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
   }
 
   .shipping {
@@ -17,14 +17,14 @@
     @include flexbox-values;
 
     @media screen and (min-width: 640px) {
-      padding: 39px 33px;
+      padding: 58px 49px;
     }
 
     .sh-icon-block {
       margin-right: 21px;
 
       @media screen and (min-width: 640px) {
-        margin-right: 28px;
+        margin-right: 42px;
       }
 
       img {
@@ -32,7 +32,7 @@
         width: 39px;
 
         @media screen and (min-width: 640px) {
-          width: 52px;
+          width: 78px;
         }
       }
     }

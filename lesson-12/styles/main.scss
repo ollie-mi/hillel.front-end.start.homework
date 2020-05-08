@@ -10,7 +10,7 @@ img {
     display: block;
 }
 
-h1 {
+h1, h2 {
     margin: 0;
 }
 
@@ -29,4 +29,5 @@ ul {
 @import "./sections/header.scss";
 @import "./sections/product-main.scss";
 @import "./sections/review.scss";
+@import "./sections/video.scss";
 
