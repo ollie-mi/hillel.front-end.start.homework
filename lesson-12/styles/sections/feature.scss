@@ -1,0 +1,54 @@
+@import "../variables/variables.scss";
+@import "../colors/colors.scss";
+@import "../mixins/mixins.scss";
+
+.feature {
+  background-color: $feature-container-bg;
+  padding: 30px 30px 36px 9px;
+
+  @media screen and (min-width: 640px) {
+    padding: 60px 18px 72px 18px;
+  }
+
+  .feature-header {
+
+    h2 {
+      color: $feature-header-color;
+      font-size: $feature-header-fs-xs;
+      letter-spacing: 0.24px;
+      margin-bottom: 25px;
+      margin-left: 17px;
+      text-transform: uppercase;
+
+      @extend %maven-pro-regular;
+    }
+
+    span {
+      color: $feature-text-color;
+      display: block;
+      font-size: $feature-text-fs-xs;
+      letter-spacing: 0.14px;
+      margin-bottom: 20px;
+      margin-left: 17px;
+
+      @extend %lato-light;
+    }
+  }
+
+  .feature-img-block {
+    margin-right: 16px;
+
+    img {
+      height: auto;
+      width: 132px;
+    }
+  }
+
+  .border {
+    background-color: $main-color;
+    border-radius: 2px;
+    height: 18px;
+    width: 4px;
+
+  }
+}
