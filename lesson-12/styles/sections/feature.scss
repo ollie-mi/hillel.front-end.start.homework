@@ -48,7 +48,55 @@
     background-color: $main-color;
     border-radius: 2px;
     height: 18px;
+    margin-right: 12px;
     width: 4px;
 
+  }
+
+  .description-container {
+    @include display-flex;
+    @include flexbox-values (center, flex-start);
+  }
+
+  .feature-desc-container {
+    margin-top: 13px;
+  }
+
+  .desc-container {
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+
+    .name-block {
+      @include display-flex;
+      @include flexbox-values(flex-start);
+    }
+
+    .feature-name {
+      color: $feature-header-color;
+      font-size: $feature-name-fs-xs;
+      letter-spacing: 0.25px;
+      text-transform: uppercase;
+
+      @extend %maven-pro-bold;
+    }
+
+    .feature-desc {
+      color: $feature-desc-color;
+      font-size: $feature-desc-fs-xs;
+      margin-top: 10px;
+
+      @extend %lato-regular;
+    }
+  }
+
+  .feature-desc-col_right {
+    margin-bottom: 38px;
+  }
+
+  .feature-desc-col_left {
+    .desc-container:first-child {
+      display: none;
+    }
   }
 }
