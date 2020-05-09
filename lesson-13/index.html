@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<section class="registration-form">
+    <div class="container">
+        <form action="#">
+            <h2>Registration</h2>
+            <div class="form-element-group">
+                <label for="fname">First Name:</label>
+                <input type="text" name="first-name" id="fname" class="form-element" maxlength="255" required>
+            </div>
+            <div class="form-element-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="last-name" id="lname" class="form-element" maxlength="255">
+            </div>
+            <div class="form-element-group">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" class="form-element" placeholder="example@gmail.com" maxlength="255" required>
+            </div>
+            <div class="form-element-group">
+                <label for="city">City:</label>
+                <select name="city" id="city" class="form-element city-select" required>
+                    <option disabled selected value="">Select your city</option>
+                    <option value="london">London</option>
+                    <option value="manchester">Manchester</option>
+                    <option value="liverpool">Liverpool</option>
+                    <option value="bristol">Bristol</option>
+                    <option value="leeds">Leeds</option>
+                </select>
+            </div>
+            <div class="form-element-group">
+                <span>Gender:</span>
+                <div class="radio-buttons-container">
+                    <div class="radio-container">
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-container">
+                <div class="submit">
+                    <input type="submit" value="Register" class="submit-button">
+                    <div class="form-element-group remember-me">
+                        <div class="remember-me-container">
+                            <input type="checkbox" id="remember-me" name="remember-me" value="yes" checked>
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
