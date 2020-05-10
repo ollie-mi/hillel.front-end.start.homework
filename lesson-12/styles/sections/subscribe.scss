@@ -1,0 +1,57 @@
+@import "../variables/variables.scss";
+@import "../colors/colors.scss";
+@import "../mixins/mixins.scss";
+
+.subscribe {
+  background-color: $feature-container-bg;
+  padding: 4.7rem 1.8rem 5.2rem 2.6rem;
+
+  h2 {
+    color: $subscribe-header;
+    font-size: $subscribe-header-fs-xs;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+
+    @extend %maven-pro-regular;
+  }
+
+  .subscribe-form {
+    border: 1px solid $subscribe-border;
+    padding: 0.5rem;
+
+    input {
+      background-color: $feature-container-bg;
+      border: none;
+      height: 3.6rem;
+      outline: none;
+      padding-left: 1.2rem;
+      padding-right: 0.8rem;
+      width: 16rem;
+
+      &::placeholder {
+        color: $subscribe-header;
+        font-size: $subscribe-placeholder-fs-xs;
+        opacity: 0.7;
+
+        @extend %lato-regular;
+      }
+    }
+
+    .subscribe-button {
+      @include blue-button($subscribe-button-fs-xs, 10.1rem);
+
+      border-radius: 3px;
+      padding: 1.5rem 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .subscribe-info {
+    color: $subscribe-info;
+    font-size: $subscribe-info-fs-xs;
+    margin-top: 2.7rem;
+
+    @include flexbox-values;
+    @extend %lato-regular;
+  }
+}
