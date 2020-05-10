@@ -193,13 +193,27 @@
         </section>
         <section class="checkout">
             <div class="form-container">
+                <div class="form-header">
+                    <div class="location-icon">
+                        <img src="./images/icon-location.png" alt="location icon">
+                    </div>
+                    <h2>Order now and get pure skin</h2>
+                </div>
                 <form action="#" novalidate>
                     <div class="form-element-group">
                         <label for="country">Country:</label>
-                        <select name="country" id="country" class="county-select form-element">
+                        <select name="country" id="country" class="select form-element">
+                            <option value="usa">United States (US)</option>
                             <option value="ukraine">Ukraine</option>
                             <option value="germany">Germany</option>
-                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                    <div class="form-element-group">
+                        <label for="state">State:</label>
+                        <select name="state" id="state" class="select form-element">
+                            <option value="ca">California</option>
+                            <option value="ny">New York</option>
+                            <option value="fl">Florida</option>
                         </select>
                     </div>
                     <div class="form-element-group">
@@ -209,13 +223,14 @@
                     <div class="form-element-group-double">
                         <div class="form-element-group">
                             <label for="city">Town/City:</label>
-                            <input type="text" placeholder="ex. San Francisco" id="city" class="form-element">
+                            <input type="text" placeholder="Ex. San Francisco" id="city" class="form-element">
                         </div>
                         <div class="form-element-group">
                             <label for="post">Post/ZIP Code:</label>
                             <input type="text" placeholder="__-___" id="post" class="form-element">
                         </div>
                     </div>
+                    <button type="submit" class="form-submit">go to payment</button>
                 </form>
             </div>
         </section>
