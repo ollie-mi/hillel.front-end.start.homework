@@ -26,27 +26,32 @@
     font-weight: 500;
 }
 
+%raleway-bold {
+    font-family: 'Raleway Bold';
+    font-weight: 700;
+}
+
 // Sizes
-$hamburger-item-height-xs: 4px;
-$hamburger-item-width-xs: 24px;
-$hamburger-trigger-height-xs: $hamburger-item-height-xs * 5;
+$hamburger-item-height-xs: 0.3rem;
+$hamburger-item-width-xs: 2.4rem;
+$hamburger-trigger-height-xs: $hamburger-item-height-xs * 6;
 
 $hamburger-item-height-s: 6px;
 $hamburger-item-width-s: 36px;
 $hamburger-trigger-height-s: $hamburger-item-height-s * 5;
 
-$logo-size-xs: 35px;
+$logo-size-xs: 2.9rem;
 $logo-size-s: 57px;
 $logo-size-l: 71px;
 
-$cart-icon-size-xs: 25px;
+$cart-icon-size-xs: 2rem;
 $cart-icon-size-s: 30px;
 $cart-icon-size-m: 40px;
 
 $cart-counter-size-xs: 15px;
 $cart-counter-size-s: 26px;
 
-$product-name-fs-xs: 20px;
+$product-name-fs-xs: 1.6rem;
 $product-name-fs-s: 27px;
 $product-name-fs-m: 40px;
 
@@ -59,26 +64,28 @@ $customer-number-text-s: 28px;
 $customer-number-text-m: 37px;
 $customer-number-text-l: 56px;
 
-$product-title-xs: 25px;
+$product-title-xs: 2.5rem;
 $product-title-s: 38px;
 $product-title-m: 43px;
 $product-title-l: 50px;
 $product-title-xl: 58px;
 $product-title-xxl: 86px;
 
-$product-description-xs: 13px;
+$product-description-xs: 1.3rem;
 $product-description-s: 18px;
 $product-description-m: 22px;
 $product-description-l: 26px;
 $product-description-xl: 30px;
 $product-description-xxl: 45px;
 
-$product-list-item-xs: 12px;
+$product-list-item-xs: 1rem;
 $product-list-item-s: 16px;
 $product-list-item-m: 18px;
 $product-list-item-l: 21px;
 $product-list-item-xl: 24px;
 $product-list-item-xxl: 36px;
+
+$check-icon-xs: 1.8rem;
 
 $buy-now-button-xs: 14px;
 $buy-now-button-s: 16px;
@@ -86,32 +93,35 @@ $buy-now-button-m: 21px;
 $buy-now-button-l: 25px;
 $buy-now-button-xl: 32px;
 
-$buy-item-description-xs: 9px;
+$buy-item-description-xs: 0.9rem;
 $buy-item-description-s: 10px;
 $buy-item-description-m: 13px;
 $buy-item-description-l: 17px;
 $buy-item-description-xl: 20px;
 
-$usp-header-fs-xs: 14px;
+$usp-header-fs-xs: 1.4rem;
 $usp-header-fs-s: 27px;
 
-$usp-text-fs-xs: 12px;
+$usp-text-fs-xs: 1.2rem;
 $usp-text-fs-s: 23px;
 
-$video-header-fs-xs: 21px;
+$video-height-xs: 21.4rem;
+$video-width-xs: 32.1rem;
+
+$video-header-fs-xs: 2.1rem;
 $video-header-fs-s: 42px;
 
-$video-text-fs-xs: 10px;
+$video-text-fs-xs: 1rem;
 $video-text-fs-s: 21px;
 
-$watch-button-fs-xs: 10px;
+$watch-button-fs-xs: 1rem;
 $watch-button-fs-s: 21px;
 
-$feature-header-fs-xs: 19px;
+$feature-header-fs-xs: 1.9rem;
 
-$feature-text-fs-xs: 11px;
+$feature-text-fs-xs: 1.1rem;
 
-$feature-name-fs-xs: 10px;
+$feature-name-fs-xs: 1rem;
 
-$feature-desc-fs-xs: 8px;
+$feature-desc-fs-xs: 0.8rem;
 

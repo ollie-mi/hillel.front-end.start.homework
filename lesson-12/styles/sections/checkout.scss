@@ -1,0 +1,8 @@
+@import "../variables/variables.scss";
+@import "../colors/colors.scss";
+@import "../mixins/mixins.scss";
+
+.checkout {
+  background-color: $white;
+  padding: 1.7rem 2.3rem;
+}

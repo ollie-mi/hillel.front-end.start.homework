@@ -5,6 +5,7 @@
 }
 
 @mixin flexbox-values ($justify-content: center, $align-items: center, $flex-direction: row) {
+  display: flex;
   align-items: $align-items;
   justify-content: $justify-content;
   flex-direction: $flex-direction;
@@ -31,10 +32,9 @@
   @extend %maven-pro-bold;
 }
 
-@mixin usp-box-desc-text($font-size, $margin-top) {
+@mixin usp-box-desc-text($font-size) {
   color: #767676;
   font-size: $font-size;
-  margin-top: $margin-top;
 
   @extend %lato-regular;
 }
