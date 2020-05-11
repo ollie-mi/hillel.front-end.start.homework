@@ -40,26 +40,28 @@ $hamburger-trigger-height-xs: $hamburger-item-height-xs * 6;
 //$hamburger-item-width-s: 36px;
 //$hamburger-trigger-height-s: $hamburger-item-height-s * 5;
 
-$logo-size-xs: 2.9rem;
+$logo-size-mobile-xs: 2.9rem;
 $logo-size-s: 3.6rem;
 
 $logo-size-desktop-xs: 2.4rem;
 //$logo-size-s: 57px;
 $logo-size-l: 71px;
 
-$cart-icon-size-xs: 2rem;
+$cart-icon-size-mobile-xs: 2rem;
+$cart-icon-size-desktop-xs: 1.3rem;
 $cart-icon-size-s: 30px;
 $cart-icon-size-m: 40px;
 
 $cart-counter-size-xs: 15px;
 $cart-counter-size-s: 26px;
 
-$product-name-fs-xs: 1.6rem;
+$product-name-fs-mobile-xs: 1.6rem;
+$product-name-fs-desktop-xs: 1.3rem;
 $product-name-fs-s: 2rem;
 //$product-name-fs-s: 27px;
 $product-name-fs-m: 40px;
 
-$menu-item-fs-xs: 0.9rem;
+$menu-item-fs-desktop-xs: 0.9rem;
 $menu-item-fs-s: 18px;
 $menu-item-fs-m: 26px;
 
