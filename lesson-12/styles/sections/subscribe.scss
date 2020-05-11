@@ -19,14 +19,21 @@
     border: 1px solid $subscribe-border;
     padding: 0.5rem;
 
+    @include flexbox-values(space-between);
+
     input {
       background-color: $feature-container-bg;
       border: none;
+      color: $input-text;
+      font-size: $form-label-fs-xs;
       height: 3.6rem;
       outline: none;
       padding-left: 1.2rem;
       padding-right: 0.8rem;
       width: 16rem;
+
+
+      @extend %lato-regular;
 
       &::placeholder {
         color: $subscribe-header;

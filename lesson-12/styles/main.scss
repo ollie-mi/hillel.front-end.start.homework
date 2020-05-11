@@ -20,6 +20,30 @@ ul {
     padding: 0;
 }
 
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 72.9%;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 80.6%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 149.5%;
+    }
+}
+
 @media screen and (min-width: 2300px) {
     .container {
         width: 2300px;

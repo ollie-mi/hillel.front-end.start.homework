@@ -32,7 +32,9 @@
     @include flexbox-values;
 
     img {
+      height: auto;
       margin-left: -0.01rem;
+      width: 1.9rem;
     }
   }
 
@@ -62,24 +64,30 @@
     background-color: #fff;
     border: none;
     border-radius: 0;
-    color: $input-text;
-    font-size: $form-label-fs-xs;
-
-    @extend %lato-regular;
 
     option {
-      font-size: 1.4rem;
-      min-height: 2rem;
+      font-size: 0.9rem;
+      min-height: 1.4rem;
+      max-width: 27.8rem;
+
+      @media screen and (min-width: 640px) {
+        font-size: 70%;
+      }
     }
   }
 
   .form-element {
     border: 1px solid $form-element-border;
+    color: $input-text;
     display: block;
+    font-size: $form-label-fs-xs;
     height: 3.6rem;
     outline: none;
     padding-left: 1.2rem;
     padding-right: 0.8rem;
+
+
+    @extend %lato-regular;
 
     &::placeholder {
       color: $placeholder;

@@ -7,10 +7,6 @@
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 1.2rem 2rem;
 
-    //@media screen and (min-width: 640px) {
-    //    padding: 25px 40px;
-    //}
-    //
     //@media screen and (min-width: 1025px) {
     //    box-shadow: none;
     //    padding: 24px 90px;
@@ -117,10 +113,6 @@
         @include display-flex;
         @include flexbox-values(space-between, center, column);
 
-        //@media screen and (min-width: 640px) {
-        //    height: $hamburger-trigger-height-s;
-        //}
-        //
         //@media screen and (min-width: 1025px) {
         //    display: none;
         //}
@@ -145,10 +137,6 @@
     .logo {
         margin-right: 1.5rem;
 
-        //@media screen and (min-width: 640px) {
-        //    margin-right: 45px;
-        //}
-        //
         //@media screen and (min-width: 1025px) {
         //    margin-right: 27px;
         //}
@@ -165,9 +153,6 @@
             height: auto;
             width: $logo-size-xs;
 
-            //@media screen and (min-width: 640px) {
-            //    width: $logo-size-s;
-            //}
             //
             //@media screen and (min-width: 1025px) {
             //    width: $logo-size-xs;
@@ -192,9 +177,6 @@
 
             @extend %maven-pro-bold;
 
-            //@media screen and (min-width: 640px) {
-            //    font-size: $product-name-fs-m;
-            //}
             //
             //@media screen and (min-width: 1025px) {
             //    margin-top: 0;
@@ -222,9 +204,6 @@
             img {
                 width: $cart-icon-size-xs;
 
-                //@media screen and (min-width: 640px) {
-                //    width: $cart-icon-size-m;
-                //}
                 //
                 //@media screen and (min-width: 1025px) {
                 //    width: $cart-icon-size-xs;
@@ -253,12 +232,6 @@
 
             @extend %maven-pro-bold;
 
-            //@media screen and (min-width: 640px) and (max-width: 1024px) {
-            //    border-radius: 12px;
-            //    font-size: 20px;
-            //    padding: 1px 6px;
-            //    right: -12px;
-            //}
             //
             //@media screen and (min-width: 1440px) {
             //    border-radius: 16px;
