@@ -7,10 +7,12 @@
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 1.2rem 2rem;
 
-    //@media screen and (min-width: 1025px) {
-    //    box-shadow: none;
-    //    padding: 24px 90px;
-    //}
+    @media screen and (min-width: 960px) {
+        box-shadow: none;
+        padding: 1.6rem 0;
+
+        @include flexbox-values;
+    }
     //
     //@media screen and (min-width: 1280px) {
     //    padding: 32px 120px;
@@ -41,16 +43,16 @@
     .menu-container {
         display: none;
 
-        //@media screen and (min-width: 1025px) {
-        //    @include display-flex;
-        //}
+        @media screen and (min-width: 960px) {
+            @include display-flex;
+        }
     }
 
     .menu-list {
         @include display-flex;
 
         .menu-list-item {
-            margin-right: 3.7rem;
+            margin-right: 2.4rem;
 
             //@media screen and (min-width: 1440px) {
             //    margin-right: 49px;
@@ -73,13 +75,13 @@
                 opacity: 0.7;
             }
 
-            @media screen and (min-width: 1440px) {
-                font-size: $menu-item-fs-s;
-            }
-
-            @media screen and (min-width: 2380px) {
-                font-size: $menu-item-fs-m;
-            }
+            //@media screen and (min-width: 1440px) {
+            //    font-size: $menu-item-fs-s;
+            //}
+            //
+            //@media screen and (min-width: 2380px) {
+            //    font-size: $menu-item-fs-m;
+            //}
         }
     }
 
@@ -90,10 +92,10 @@
 
         @include blue-button(1.2rem, 16rem);
 
-        //@media screen and (min-width: 1025px) {
-        //    display: block;
-        //}
-        //
+        @media screen and (min-width: 960px) {
+            display: block;
+        }
+
         //@media screen and (min-width: 1440px) {
         //    font-size: 16px;
         //    margin-left: 47px;
@@ -113,9 +115,9 @@
         @include display-flex;
         @include flexbox-values(space-between, center, column);
 
-        //@media screen and (min-width: 1025px) {
-        //    display: none;
-        //}
+        @media screen and (min-width: 960px) {
+            display: none;
+        }
     }
 
     .hamburger-item {
@@ -137,9 +139,9 @@
     .logo {
         margin-right: 1.5rem;
 
-        //@media screen and (min-width: 1025px) {
-        //    margin-right: 27px;
-        //}
+        @media screen and (min-width: 960px) {
+            margin-right: 1.8rem;
+        }
         //
         //@media screen and (min-width: 1440px) {
         //    margin-right: 36px;
@@ -153,10 +155,9 @@
             height: auto;
             width: $logo-size-xs;
 
-            //
-            //@media screen and (min-width: 1025px) {
-            //    width: $logo-size-xs;
-            //}
+            @media screen and (min-width: 960px) {
+                width: $logo-size-desktop-xs;
+            }
             //
             //@media screen and (min-width: 2380px) {
             //    width: $logo-size-l;
@@ -166,10 +167,6 @@
 
     .product-name {
         margin-top: 0.5rem;
-
-        //@media screen and (min-width: 1025px) {
-        //    margin-top: 0;
-        //}
 
         span {
             font-size: $product-name-fs-xs;
