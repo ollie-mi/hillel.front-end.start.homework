@@ -1,0 +1,103 @@
+@import "../variables/variables.scss";
+@import "../colors/colors.scss";
+@import "../mixins/mixins.scss";
+
+.footer {
+  padding: 3.4rem 3.1rem 4rem;
+
+  .logo-container {
+    margin-bottom: 4.2rem;
+    @include flexbox-values(flex-start);
+  }
+
+  .logo {
+    margin-right: 2.7rem;
+
+    img {
+      height: 100%;
+      width: $logo-size-s;
+    }
+  }
+
+  .product-name {
+    margin-top: 0.5rem;
+
+    span {
+      font-size: $product-name-fs-s;
+      text-transform: uppercase;
+
+      @extend %maven-pro-bold;
+    }
+
+    .product-name-thin {
+      font-weight: normal;
+    }
+  }
+
+  .company-description {
+    color: $subscribe-info;
+    font-size: $footer-desc-fs-xs;
+    margin-bottom: 5rem;
+
+    @extend %lato-light;
+  }
+  .social-networks-container {
+    margin-bottom: 3.8rem;
+
+    img {
+      height: 1.4rem;
+      margin-right: 2.4rem;
+    }
+
+    .facebook {
+      height: 1.7rem;
+    }
+
+    .pinterest {
+      height: 1.6rem;
+    }
+  }
+
+  .footer-lists {
+    border-bottom: 1px solid #e6e6e6;
+    flex-wrap: wrap;
+    padding-bottom: 1.1rem;
+
+    @include flexbox-values(space-between);
+
+    .footer-list-container {
+
+      h3 {
+        color: $footer-header;
+        font-size: $footer-header-fs-xs;
+        margin-bottom: 2.5rem;
+        letter-spacing: 0.06rem;
+        text-transform: uppercase;
+
+        @extend %maven-pro-bold;
+      }
+
+      li {
+        color: $subscribe-info;
+        font-size: $footer-desc-fs-xs;
+        margin-bottom: 2rem;
+
+        @extend %lato-regular;
+      }
+    }
+  }
+
+  .footer-copyright {
+    color: $subscribe-info;
+    font-size: $footer-desc-fs-xs;
+    margin-top: 3.6rem;
+
+    @extend %lato-regular;
+
+    a {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+}
