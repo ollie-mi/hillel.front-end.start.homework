@@ -119,22 +119,26 @@ $usp-text-fs-desktop-s: 0.8rem;
 $video-height-xs: 21.4rem;
 $video-width-xs: 32.1rem;
 
-$video-header-fs-xs: 2.1rem;
-$video-header-fs-s: 42px;
+$video-header-fs-mobile-xs: 2.1rem;
+$video-header-fs-desktop-s: 2rem;
 
-$video-text-fs-xs: 1rem;
-$video-text-fs-s: 21px;
+$video-text-fs-mobile-xs: 1rem;
+$video-text-fs-desktop-s: 1.2rem;
 
-$watch-button-fs-xs: 1rem;
-$watch-button-fs-s: 21px;
+$watch-button-fs-mobile-xs: 1rem;
+$watch-button-fs-desktop-s: 0.8rem;
 
-$feature-header-fs-xs: 1.9rem;
+$feature-header-fs-mobile-xs: 1.9rem;
+$feature-header-fs-desktop: 2rem;
 
-$feature-text-fs-xs: 1.1rem;
+$feature-text-fs-mobile: 1.1rem;
+$feature-text-fs-desktop: 1.1rem;
 
-$feature-name-fs-xs: 1rem;
+$feature-name-fs-mobile: 1rem;
+$feature-name-fs-desktop: 1.3rem;
 
-$feature-desc-fs-xs: 0.8rem;
+$feature-desc-fs-mobile: 0.8rem;
+$feature-desc-fs-desktop: 1.1rem;
 
 $form-header-fs-xs: 1.2rem;
 
@@ -154,8 +158,12 @@ $footer-desc-fs-xs: 1.3rem;
 
 $footer-header-fs-xs: 1.1rem;
 
-$map-img-size-desktop: 55.3rem;
+$map-img-size-desktop-xs: 55.3rem;
+$map-img-size-desktop-s: 53.3rem;
 
 $review-header-desktop: 2rem;
 
 $review-text-fs-desktop-xs: 0.9rem;
+
+$feature-img-size-mobile: 13.2rem;
+$feature-img-size-desktop: 19.3rem;

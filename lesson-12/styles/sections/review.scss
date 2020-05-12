@@ -4,6 +4,7 @@
 
 .review {
   background-color: $feature-container-bg;
+  overflow: hidden;
 
   @media screen and (min-width: 960px) {
     @include flexbox-values(center, center, column);
@@ -144,7 +145,11 @@
 
       img {
         height: auto;
-        width: $map-img-size-desktop;
+        width: $map-img-size-desktop-xs;
+
+        @media screen and (min-width: 1440px) {
+          width: $map-img-size-desktop-s;
+        }
       }
     }
   }
