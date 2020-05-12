@@ -104,6 +104,10 @@
       @include flexbox-values(flex-end, flex-start);
     }
 
+    @media screen and (min-width: 1920px) {
+      padding-left: 9.2rem;
+    }
+
     .map-description {
       margin-top: 4rem;
       padding-right: 3.7rem;
