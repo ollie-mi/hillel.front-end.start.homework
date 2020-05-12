@@ -58,6 +58,10 @@
 
         @include blue-button(0.8rem, 10.9rem);
 
+        &:hover {
+            opacity: 0.8;
+        }
+
         @media screen and (min-width: 960px) {
             display: block;
         }
@@ -148,7 +152,6 @@
             @extend %maven-pro-bold;
 
             @media screen and (min-width: 940px) {
-                //border-radius: 16px;
                 font-size: 0.7rem;
                 padding: 0.3rem 0.5rem;
                 top: -0.7rem;
