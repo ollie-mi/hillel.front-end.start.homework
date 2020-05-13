@@ -6,59 +6,136 @@
   background-color: $feature-container-bg;
   padding: 4.7rem 1.8rem 5.2rem 2.6rem;
 
-  h2 {
-    color: $subscribe-header;
-    font-size: $subscribe-header-fs-xs;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
+  @include flexbox-values;
 
-    @extend %maven-pro-regular;
+  @media screen and (min-width: 960px) {
+    //padding: 5.3rem 0;
+    padding: 0;
   }
 
-  .subscribe-form {
-    border: 1px solid $subscribe-border;
-    padding: 0.5rem;
+  .subscribe-container {
+    @include flexbox-values(flex-start);
+  }
 
-    @include flexbox-values(space-between);
+  .plant-container {
+    display: none;
+    margin-right: 4.4rem;
 
-    input {
-      background-color: $feature-container-bg;
-      border: none;
-      color: $input-text;
-      font-size: $form-label-fs-mobile;
-      height: 3.6rem;
-      outline: none;
-      padding-left: 1.2rem;
-      padding-right: 0.8rem;
-      width: 16rem;
+    @media screen and (min-width: 960px) {
+      @include flexbox-values(center,center,column);
+    }
 
+    img {
+      display: block;
+      position: relative;
+    }
 
-      @extend %lato-regular;
+    .plant-img {
+      bottom: -7rem;
+      height: auto;
+      right: 1rem;
+      width: 14.3rem;
+    }
 
-      &::placeholder {
-        color: $subscribe-header;
-        font-size: $subscribe-placeholder-fs-xs;
-        opacity: 0.7;
+    .leaves-img {
+      bottom: -4rem;
+      height: auto;
+      right: -3rem;
+      width: 7.3rem;
+    }
+  }
 
-        @extend %lato-regular;
+  .subscribe-form-container {
+
+    @media screen and (min-width: 960px) {
+      padding: 5.3rem 0;
+      @include flexbox-values(center,center,column);
+    }
+
+    h2 {
+      color: $subscribe-header;
+      font-size: $subscribe-header-fs-mobile;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+
+      @extend %maven-pro-regular;
+
+      @media screen and (min-width: 960px) {
+        font-size: $subscribe-header-fs-desktop;
       }
     }
 
-    .subscribe-button {
-      @include blue-button($subscribe-button-fs-xs, 10.1rem);
+    .subscribe-form {
+      border: 1px solid $subscribe-border;
+      padding: 0.5rem;
 
-      border-radius: 3px;
-      padding: 1.5rem 0;
-      text-transform: uppercase;
+      @include flexbox-values(space-between);
+
+      @media screen and (min-width: 960px) {
+        padding: 0.3rem;
+        width: 34.3rem;
+      }
+
+      input {
+        background-color: $feature-container-bg;
+        border: none;
+        color: $input-text;
+        font-size: $form-label-fs-mobile;
+        height: 3.6rem;
+        outline: none;
+        padding-left: 1.2rem;
+        padding-right: 0.8rem;
+        width: 16rem;
+
+        @extend %lato-regular;
+
+        @media screen and (min-width: 960px) {
+          font-size: $form-label-fs-desktop;
+          height: 3.1rem;
+          padding-left: 1.6rem;
+          width: 22rem;
+        }
+
+        &::placeholder {
+          color: $subscribe-header;
+          font-size: $subscribe-placeholder-fs-mobile;
+          opacity: 0.7;
+
+          @extend %lato-regular;
+
+          @media screen and (min-width: 960px) {
+            font-size: $subscribe-placeholder-fs-desktop;
+          }
+        }
+      }
+
+      .subscribe-button {
+        @include blue-button($subscribe-button-fs-mobile, 10.1rem);
+
+        border-radius: 3px;
+        padding: 1.5rem 0;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 960px) {
+          font-size: $subscribe-button-fs-desktop;
+          padding: 0.9rem 0;
+          width: 8rem;
+        }
+      }
     }
-  }
 
-  .subscribe-info {
-    color: $subscribe-info;
-    font-size: $subscribe-info-fs-xs;
-    margin-top: 2.7rem;
+    .subscribe-info {
+      color: $subscribe-info;
+      font-size: $subscribe-info-fs-mobile;
+      margin-top: 2.7rem;
 
-    @include flexbox-values;
-    @extend %lato-regular;
+      @include flexbox-values;
+      @extend %lato-regular;
+
+      @media screen and (min-width: 960px) {
+        font-size: $subscribe-info-fs-desktop;
+        margin-top: 2.3rem;
+      }
+    }
   }
 }

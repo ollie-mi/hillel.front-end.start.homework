@@ -4,7 +4,6 @@
 
 .review {
   background-color: $feature-container-bg;
-  overflow: hidden;
 
   @media screen and (min-width: 960px) {
     @include flexbox-values(center, center, column);

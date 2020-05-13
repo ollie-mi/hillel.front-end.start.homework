@@ -20,6 +20,10 @@ ul {
     padding: 0;
 }
 
+.page-wrapper {
+    overflow: hidden;
+}
+
 @media screen and (min-width: 375px) {
     html {
         font-size: 72.9%;
