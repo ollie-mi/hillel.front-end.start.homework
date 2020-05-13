@@ -41,7 +41,8 @@ $hamburger-trigger-height-xs: $hamburger-item-height-xs * 6;
 //$hamburger-trigger-height-s: $hamburger-item-height-s * 5;
 
 $logo-size-mobile-xs: 2.9rem;
-$logo-size-s: 3.6rem;
+$logo-footer-size-mobile: 3.6rem;
+$logo-footer-size-desktop: 2.4rem;
 
 $logo-size-desktop-xs: 2.4rem;
 //$logo-size-s: 57px;
@@ -57,7 +58,8 @@ $cart-counter-size-s: 26px;
 
 $product-name-fs-mobile-xs: 1.6rem;
 $product-name-fs-desktop-xs: 1.3rem;
-$product-name-fs-s: 2rem;
+$product-name-footer-fs-mobile: 2rem;
+$product-name-footer-fs-desktop: 1.3rem;
 //$product-name-fs-s: 27px;
 $product-name-fs-m: 40px;
 
@@ -161,9 +163,11 @@ $subscribe-button-fs-desktop: 0.7rem;
 $subscribe-info-fs-mobile: 1.3rem;
 $subscribe-info-fs-desktop: 0.9rem;
 
-$footer-desc-fs-xs: 1.3rem;
+$footer-desc-fs-mobile: 1.3rem;
+$footer-desc-fs-desktop: 0.9rem;
 
-$footer-header-fs-xs: 1.1rem;
+$footer-header-fs-mobile: 1.1rem;
+$footer-header-fs-desktop: 0.7rem;
 
 $map-img-size-desktop-xs: 55.3rem;
 $map-img-size-desktop-s: 53.3rem;

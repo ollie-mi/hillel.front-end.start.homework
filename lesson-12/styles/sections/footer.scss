@@ -5,17 +5,54 @@
 .footer {
   padding: 3.4rem 3.1rem 4rem;
 
+  @media screen and (min-width: 960px) {
+    padding: 0;
+    @include flexbox-values;
+  }
+
+  .footer-container {
+    @media screen and (min-width: 960px) {
+      padding: 6.9rem 0 2.7rem;
+    }
+  }
+
+  .footer-row {
+    @media screen and (min-width: 960px) {
+      @include flexbox-values(flex-start);
+      padding-right: 8rem;
+    }
+  }
+
+  .footer-left-column {
+    @media screen and (min-width: 960px) {
+      margin-right: 22.5rem;
+      width: 14.9rem;
+    }
+  }
+
   .logo-container {
     margin-bottom: 4.2rem;
     @include flexbox-values(flex-start);
+
+    @media screen and (min-width: 960px) {
+      margin-bottom: 2.8rem;
+    }
   }
 
   .logo {
     margin-right: 2.7rem;
 
+    @media screen and (min-width: 960px) {
+      margin-right: 1.8rem;
+    }
+
     img {
       height: 100%;
-      width: $logo-size-s;
+      width: $logo-footer-size-mobile;
+
+      @media screen and (min-width: 960px) {
+        width: $logo-footer-size-desktop;
+      }
     }
   }
 
@@ -23,10 +60,14 @@
     margin-top: 0.5rem;
 
     span {
-      font-size: $product-name-fs-s;
+      font-size: $product-name-footer-fs-mobile;
       text-transform: uppercase;
 
       @extend %maven-pro-bold;
+
+      @media screen and (min-width: 960px) {
+        font-size: $product-name-footer-fs-desktop;
+      }
     }
 
     .product-name-thin {
@@ -36,63 +77,113 @@
 
   .company-description {
     color: $subscribe-info;
-    font-size: $footer-desc-fs-xs;
+    font-size: $footer-desc-fs-mobile;
     margin-bottom: 5rem;
 
     @extend %lato-light;
+
+    @media screen and (min-width: 960px) {
+      font-size: $footer-desc-fs-desktop;
+      margin-bottom: 3.2rem;
+    }
   }
+
   .social-networks-container {
     margin-bottom: 3.8rem;
+
+    @media screen and (min-width: 960px) {
+      margin-bottom: 5rem;
+    }
 
     img {
       height: 1.4rem;
       margin-right: 2.4rem;
+
+      @media screen and (min-width: 960px) {
+        height: 0.9rem;
+        margin-right: 1.4rem;
+      }
     }
 
     .facebook {
       height: 1.7rem;
+
+      @media screen and (min-width: 960px) {
+        height: 1.1rem;
+      }
     }
 
     .pinterest {
       height: 1.6rem;
+
+      @media screen and (min-width: 960px) {
+        height: 1.1rem;
+      }
     }
   }
 
   .footer-lists {
-    border-bottom: 1px solid #e6e6e6;
     flex-wrap: wrap;
     padding-bottom: 1.1rem;
 
     @include flexbox-values(space-between);
 
+    @media screen and (min-width: 960px) {
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+
     .footer-list-container {
+
+      @media screen and (min-width: 960px) {
+
+        &:not(:last-child) {
+          margin-right: 4.6rem;
+        }
+      }
 
       h3 {
         color: $footer-header;
-        font-size: $footer-header-fs-xs;
+        font-size: $footer-header-fs-mobile;
         margin-bottom: 2.5rem;
         letter-spacing: 0.06rem;
         text-transform: uppercase;
 
         @extend %maven-pro-bold;
+
+        @media screen and (min-width: 960px) {
+          font-size: $footer-header-fs-desktop;
+          margin-bottom: 1.7rem;
+        }
       }
 
       li {
         color: $subscribe-info;
-        font-size: $footer-desc-fs-xs;
+        font-size: $footer-desc-fs-mobile;
         margin-bottom: 2rem;
 
         @extend %lato-regular;
+
+        @media screen and (min-width: 960px) {
+          font-size: $footer-desc-fs-desktop;
+          margin-bottom: 1.3rem;
+        }
       }
     }
   }
 
   .footer-copyright {
+    border-top: 1px solid #e6e6e6;
     color: $subscribe-info;
-    font-size: $footer-desc-fs-xs;
-    margin-top: 3.6rem;
+    font-size: $footer-desc-fs-mobile;
+    padding-top: 3.6rem;
 
     @extend %lato-regular;
+
+    @media screen and (min-width: 960px) {
+      font-size: $footer-desc-fs-desktop;
+      padding-top: 2.4rem;
+    }
 
     a {
       color: $main-color;
