@@ -76,14 +76,14 @@
   }
 
   .company-description {
-    color: $subscribe-info;
-    font-size: $footer-desc-fs-mobile;
+    color: $grey-info-text;
+    font-size: $footer-text-fs-mobile;
     margin-bottom: 5rem;
 
     @extend %lato-light;
 
     @media screen and (min-width: 960px) {
-      font-size: $footer-desc-fs-desktop;
+      font-size: $footer-text-fs-desktop;
       margin-bottom: 3.2rem;
     }
   }
@@ -136,14 +136,25 @@
     .footer-list-container {
 
       @media screen and (min-width: 960px) {
-
         &:not(:last-child) {
           margin-right: 4.6rem;
         }
       }
 
+      @media screen and (min-width: 1440px) {
+        &:not(:last-child) {
+          margin-right: 4rem;
+        }
+      }
+
+      @media screen and (min-width: 1920px) {
+        &:not(:last-child) {
+          margin-right: 3.5rem;
+        }
+      }
+
       h3 {
-        color: $footer-header;
+        color: $dark-grey-header;
         font-size: $footer-header-fs-mobile;
         margin-bottom: 2.5rem;
         letter-spacing: 0.06rem;
@@ -158,14 +169,14 @@
       }
 
       li {
-        color: $subscribe-info;
-        font-size: $footer-desc-fs-mobile;
+        color: $grey-info-text;
+        font-size: $footer-text-fs-mobile;
         margin-bottom: 2rem;
 
         @extend %lato-regular;
 
         @media screen and (min-width: 960px) {
-          font-size: $footer-desc-fs-desktop;
+          font-size: $footer-text-fs-desktop;
           margin-bottom: 1.3rem;
         }
       }
@@ -174,14 +185,14 @@
 
   .footer-copyright {
     border-top: 1px solid #e6e6e6;
-    color: $subscribe-info;
-    font-size: $footer-desc-fs-mobile;
+    color: $grey-info-text;
+    font-size: $footer-text-fs-mobile;
     padding-top: 3.6rem;
 
     @extend %lato-regular;
 
     @media screen and (min-width: 960px) {
-      font-size: $footer-desc-fs-desktop;
+      font-size: $footer-text-fs-desktop;
       padding-top: 2.4rem;
     }
 

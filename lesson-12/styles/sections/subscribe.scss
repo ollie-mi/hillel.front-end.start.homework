@@ -3,7 +3,7 @@
 @import "../mixins/mixins.scss";
 
 .subscribe {
-  background-color: $feature-container-bg;
+  background-color: $grey-container-bg;
   padding: 4.7rem 1.8rem 5.2rem 2.6rem;
 
   @include flexbox-values;
@@ -77,7 +77,7 @@
       }
 
       input {
-        background-color: $feature-container-bg;
+        background-color: $grey-container-bg;
         border: none;
         color: $input-text;
         font-size: $form-label-fs-mobile;
@@ -121,11 +121,15 @@
           padding: 0.9rem 0;
           width: 8rem;
         }
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
 
     .subscribe-info {
-      color: $subscribe-info;
+      color: $grey-info-text;
       font-size: $subscribe-info-fs-mobile;
       margin-top: 2.7rem;
 

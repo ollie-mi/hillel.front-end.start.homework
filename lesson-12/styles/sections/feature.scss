@@ -3,7 +3,7 @@
 @import "../mixins/mixins.scss";
 
 .feature {
-  background-color: $feature-container-bg;
+  background-color: $grey-container-bg;
 
   @media screen and (min-width: 960px) {
     @include flexbox-values;
@@ -28,7 +28,7 @@
 
     h2 {
       color: $feature-header-color;
-      font-size: $feature-header-fs-mobile-xs;
+      font-size: $feature-header-fs-mobile;
       letter-spacing: 0.024rem;
       margin-bottom: 2.5rem;
       margin-left: 1.7rem;

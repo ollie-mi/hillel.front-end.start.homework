@@ -36,145 +36,125 @@ $hamburger-item-height-xs: 0.3rem;
 $hamburger-item-width-xs: 2.4rem;
 $hamburger-trigger-height-xs: $hamburger-item-height-xs * 6;
 
-//$hamburger-item-height-s: 6px;
-//$hamburger-item-width-s: 36px;
-//$hamburger-trigger-height-s: $hamburger-item-height-s * 5;
-
-$logo-size-mobile-xs: 2.9rem;
+// Logo
+$logo-size-mobile: 2.9rem;
+$logo-size-desktop: 2.4rem;
 $logo-footer-size-mobile: 3.6rem;
 $logo-footer-size-desktop: 2.4rem;
 
-$logo-size-desktop-xs: 2.4rem;
-//$logo-size-s: 57px;
-$logo-size-l: 71px;
+// Cart
+$cart-icon-size-mobile: 2rem;
+$cart-icon-size-desktop: 1.3rem;
 
-$cart-icon-size-mobile-xs: 2rem;
-$cart-icon-size-desktop-xs: 1.3rem;
-$cart-icon-size-s: 30px;
-$cart-icon-size-m: 40px;
-
-$cart-counter-size-xs: 15px;
-$cart-counter-size-s: 26px;
-
-$product-name-fs-mobile-xs: 1.6rem;
-$product-name-fs-desktop-xs: 1.3rem;
+// Product name
+$product-name-fs-mobile: 1.6rem;
+$product-name-fs-desktop: 1.3rem;
 $product-name-footer-fs-mobile: 2rem;
 $product-name-footer-fs-desktop: 1.3rem;
-//$product-name-fs-s: 27px;
-$product-name-fs-m: 40px;
 
-$menu-item-fs-desktop-xs: 0.9rem;
-$menu-item-fs-s: 18px;
-$menu-item-fs-m: 26px;
+// Menu
+$menu-item-fs-desktop: 0.9rem;
 
-$customer-number-desktop-xs: 1.9rem;
+// Main pre-header
+$customer-number-desktop: 1.9rem;
 
-$customer-number-text-s: 28px;
-$customer-number-text-m: 37px;
-$customer-number-text-l: 56px;
+// Main product title
+$product-title-mobile: 2.5rem;
+$product-title-desktop: 2.9rem;
 
-$product-title-mobile-xs: 2.5rem;
-$product-title-desktop-s: 2.9rem;
-$product-title-m: 43px;
-$product-title-l: 50px;
-$product-title-xl: 58px;
-$product-title-xxl: 86px;
+// Product description
+$product-description-mobile: 1.3rem;
+$product-description-desktop: 1.5rem;
 
-$product-description-mobile-xs: 1.3rem;
-$product-description-desktop-s: 1.5rem;
-$product-description-m: 22px;
-$product-description-l: 26px;
-$product-description-xl: 30px;
-$product-description-xxl: 45px;
+// Product list
+$product-list-item-mobile: 1rem;
+$product-list-item-desktop: 1.2rem;
 
-$product-list-item-mobile-xs: 1rem;
-$product-list-item-desktop-s: 1.2rem;
-$product-list-item-m: 18px;
-$product-list-item-l: 21px;
-$product-list-item-xl: 24px;
-$product-list-item-xxl: 36px;
+// Check icon
+$check-icon-mobile: 1.8rem;
+$check-icon-desktop: 2rem;
 
-$check-icon-mobile-xs: 1.8rem;
-$check-icon-desktop-xs: 2rem;
-
+// Product image
 $product-image-mobile: 24rem;
 $product-image-desktop: 26.2rem;
 
-$buy-now-button-mobile-xs: 1.4rem;
-$buy-now-button-desktop-s: 1.1rem;
-$buy-now-button-m: 21px;
-$buy-now-button-l: 25px;
-$buy-now-button-xl: 32px;
+// Buy now button
+$buy-now-button-mobile: 1.4rem;
+$buy-now-button-desktop: 1.1rem;
 
-$buy-item-description-mobile-xs: 0.9rem;
-$buy-item-description-desktop-s: 0.7rem;
-$buy-item-description-m: 13px;
-$buy-item-description-l: 17px;
-$buy-item-description-xl: 20px;
+// Buy item text
+$buy-item-description-mobile: 0.9rem;
+$buy-item-description-desktop: 0.7rem;
 
-$usp-header-fs-mobile-xs: 1.4rem;
-$usp-header-fs-desktop-s: 0.9rem;
+// Usp header
+$usp-header-fs-mobile: 1.4rem;
+$usp-header-fs-desktop: 0.9rem;
 
-$usp-text-fs-mobile-xs: 1.2rem;
-$usp-text-fs-desktop-s: 0.8rem;
+// Usp text
+$usp-text-fs-mobile: 1.2rem;
+$usp-text-fs-desktop: 0.8rem;
 
-$video-height-xs: 21.4rem;
-$video-width-xs: 32.1rem;
+// Video sizes
+$video-height-mobile: 21.4rem;
+$video-height-desktop: 31.7rem;
 
-$video-header-fs-mobile-xs: 2.1rem;
-$video-header-fs-desktop-s: 2rem;
+// Video text sizes
+$video-header-fs-mobile: 2.1rem;
+$video-header-fs-desktop: 2rem;
+$video-text-fs-mobile: 1rem;
+$video-text-fs-desktop: 1.2rem;
 
-$video-text-fs-mobile-xs: 1rem;
-$video-text-fs-desktop-s: 1.2rem;
+// Button
+$watch-button-fs-mobile: 1rem;
+$watch-button-fs-desktop: 0.8rem;
 
-$watch-button-fs-mobile-xs: 1rem;
-$watch-button-fs-desktop-s: 0.8rem;
-
-$feature-header-fs-mobile-xs: 1.9rem;
+// Feature block
+$feature-header-fs-mobile: 1.9rem;
 $feature-header-fs-desktop: 2rem;
-
 $feature-text-fs-mobile: 1.1rem;
 $feature-text-fs-desktop: 1.1rem;
-
 $feature-name-fs-mobile: 1rem;
 $feature-name-fs-desktop: 1.3rem;
-
 $feature-desc-fs-mobile: 0.8rem;
 $feature-desc-fs-desktop: 1.1rem;
 
+$feature-img-size-mobile: 13.2rem;
+$feature-img-size-desktop: 19.3rem;
+
+// Form
 $form-header-fs-mobile: 1.2rem;
 $form-header-fs-desktop: 1.7rem;
-
 $form-label-fs-mobile: 0.9rem;
 $form-label-fs-desktop: 1rem;
 
+// Submit button
 $submit-button-fs-mobile: 1.2rem;
 $submit-button-fs-desktop: 0.9rem;
 
+// Subscribe block
 $subscribe-header-fs-mobile: 1.5rem;
 $subscribe-header-fs-desktop: 1.7rem;
-
 $subscribe-placeholder-fs-mobile: 1.3rem;
 $subscribe-placeholder-fs-desktop: 1rem;
 
+// Subscribe button
 $subscribe-button-fs-mobile: 1rem;
 $subscribe-button-fs-desktop: 0.7rem;
 
 $subscribe-info-fs-mobile: 1.3rem;
 $subscribe-info-fs-desktop: 0.9rem;
 
-$footer-desc-fs-mobile: 1.3rem;
-$footer-desc-fs-desktop: 0.9rem;
+// Footer
+$footer-text-fs-mobile: 1.3rem;
+$footer-text-fs-desktop: 0.9rem;
 
 $footer-header-fs-mobile: 1.1rem;
 $footer-header-fs-desktop: 0.7rem;
 
+// Review bloxk
 $map-img-size-desktop-xs: 55.3rem;
 $map-img-size-desktop-s: 53.3rem;
 
 $review-header-desktop: 2rem;
 
-$review-text-fs-desktop-xs: 0.9rem;
-
-$feature-img-size-mobile: 13.2rem;
-$feature-img-size-desktop: 19.3rem;
+$review-text-fs-desktop: 0.9rem;

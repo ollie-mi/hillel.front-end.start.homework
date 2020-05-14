@@ -33,7 +33,7 @@
 
   .customers-number {
     display: none;
-    font-size: $customer-number-desktop-xs;
+    font-size: $customer-number-desktop;
     margin-bottom: 0.7rem;
 
     @extend %maven-pro-regular;
@@ -48,37 +48,37 @@
   }
 
   .product-title {
-    font-size: $product-title-mobile-xs;
+    font-size: $product-title-mobile;
     margin-bottom: 1.7rem;
     text-transform: uppercase;
 
     @extend %maven-pro-bold;
 
     @media screen and (min-width: 960px) {
-      font-size: $product-title-desktop-s;
+      font-size: $product-title-desktop;
       margin-bottom: 0.6rem;
     }
   }
 
   .product-desc-container {
-    font-size: $product-description-mobile-xs;
+    font-size: $product-description-mobile;
     margin-bottom: 2.3rem;
 
     @extend %lato-light;
 
     @media screen and (min-width: 960px) {
-      font-size: $product-description-desktop-s;
+      font-size: $product-description-desktop;
       margin-bottom: 2.2rem;
     }
   }
 
   .product-list-container {
-    font-size: $product-list-item-mobile-xs;
+    font-size: $product-list-item-mobile;
 
     @extend %maven-pro-medium;
 
     @media screen and (min-width: 960px) {
-      font-size: $product-list-item-desktop-s;
+      font-size: $product-list-item-desktop;
     }
 
     .product-item {
@@ -91,11 +91,11 @@
       img {
         height: auto;
         margin-right: 1.5rem;
-        width: $check-icon-mobile-xs;
+        width: $check-icon-mobile;
 
         @media screen and (min-width: 960px) {
           margin-right: 1.7rem;
-          width: $check-icon-desktop-xs;
+          width: $check-icon-desktop;
         }
       }
     }
@@ -139,13 +139,13 @@
       padding: 1.8rem 0;
       text-transform: uppercase;
 
-      @include blue-button($buy-now-button-mobile-xs, 27rem);
+      @include blue-button($buy-now-button-mobile, 27rem);
 
       @extend %maven-pro-bold;
 
       @media screen and (min-width: 960px) {
         border-radius: 2px;
-        font-size: $buy-now-button-desktop-s;
+        font-size: $buy-now-button-desktop;
         padding: 1rem 0;
         width: 17.9rem;
 
@@ -156,7 +156,7 @@
     }
 
     .buy-item-description {
-      font-size: $buy-item-description-mobile-xs;
+      font-size: $buy-item-description-mobile;
       margin-top: 0.9rem;
 
       @extend %maven-pro-medium;
@@ -164,7 +164,7 @@
       @include flexbox-values;
 
       @media screen and (min-width: 960px) {
-        font-size: $buy-item-description-desktop-s;
+        font-size: $buy-item-description-desktop;
         margin-top: 0.6rem;
 
         @include flexbox-values;

@@ -39,7 +39,7 @@
 
         a {
             color: $black;
-            font-size: $menu-item-fs-desktop-xs;
+            font-size: $menu-item-fs-desktop;
             text-decoration: none;
             transition: opacity 200ms;
 
@@ -98,10 +98,10 @@
 
         img {
             height: auto;
-            width: $logo-size-mobile-xs;
+            width: $logo-size-mobile;
 
             @media screen and (min-width: 960px) {
-                width: $logo-size-desktop-xs;
+                width: $logo-size-desktop;
             }
         }
     }
@@ -110,13 +110,13 @@
         margin-top: 0.5rem;
 
         span {
-            font-size: $product-name-fs-mobile-xs;
+            font-size: $product-name-fs-mobile;
             text-transform: uppercase;
 
             @extend %maven-pro-bold;
 
             @media screen and (min-width: 960px) {
-                font-size: $product-name-fs-desktop-xs;
+                font-size: $product-name-fs-desktop;
             }
         }
 
@@ -130,10 +130,10 @@
 
         .cart-image {
             img {
-                width: $cart-icon-size-mobile-xs;
+                width: $cart-icon-size-mobile;
 
                 @media screen and (min-width: 960px) {
-                    width: $cart-icon-size-desktop-xs;
+                    width: $cart-icon-size-desktop;
                 }
             }
         }
